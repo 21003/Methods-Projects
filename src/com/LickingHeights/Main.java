@@ -23,9 +23,12 @@ public class Main {
         System.out.println("Hello "+noun);
 
     }
-      
+    public static void helloName(String userName) {
+        System.out.println("Hello "+userName );
+
+    }
+    
 
 
-
-}
+    }
 

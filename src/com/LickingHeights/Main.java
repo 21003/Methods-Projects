@@ -8,8 +8,10 @@ public class Main {
         Scanner keyboard;
         keyboard = new Scanner(System.in);
 
-
+        String userWord3;
         String userName;
+        String userWord1;
+        String userWord2;
         int firstNumber, secondNumber, fifthNumber, sixthNumber;
         double thirdNumber, fourthNumber;
 
@@ -42,11 +44,13 @@ public class Main {
         if (fifthNumber > sixthNumber){
             System.out.println(fifthNumber+ " is the bigger of the two numbers");
         }
-        if (fifthNumber < sixthNumber){
-            System.out.println(sixthNumber+ " is the bigger of the two numbers");
+        if (fifthNumber < sixthNumber) {
+            System.out.println(sixthNumber + " is the bigger of the two numbers");
+
         }
 
 
+        userWord3 = ("Beach The");
 
 
 
@@ -54,6 +58,8 @@ public class Main {
         printGreeting("World");
 
         helloName("" + userName);
+
+        flip ("" + userWord3);
 
 
 
@@ -79,7 +85,8 @@ public class Main {
     public static int max(int fifthNumber , int sixthNumber){
         return fifthNumber ;
     }
-    public static void flip (String noun2){
-        System.out.println("");
+    public static void flip(String noun2){
+        System.out.println("I will now switch the placement of the words 'The Beach'");
+        System.out.println(noun2);
     }
 }

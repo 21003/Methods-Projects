@@ -20,23 +20,31 @@ public class Main {
         System.out.println("Can you please give me two number to muliply");
         System.out.println("Can you please give me the first number");
         firstNumber = keyboard.nextInt();
-        System.out.println("can you please give me second number");
+        System.out.println("Can you please give me second number");
         secondNumber = keyboard.nextInt();
         System.out.println(firstNumber + " times " + secondNumber + " equals " + mulitiply(firstNumber, secondNumber));
+        System.out.println(firstNumber * secondNumber);
 
         System.out.println ("Can you please give me two numbers to divide");
         System.out.println("Can you please give me the first number");
         thirdNumber = keyboard.nextDouble();
-        System.out.println("can you please give me second number");
+        System.out.println("Can you please give me second number");
         fourthNumber = keyboard.nextDouble();
         System.out.println(thirdNumber + " divided " + fourthNumber + " equals " + divide(thirdNumber, fourthNumber));
+        System.out.println(thirdNumber / fourthNumber);
 
-        System.out.println("Can you please give me numbers so I can find the bigger one");
-        System.out.println("Can you please give me the first number");
+        System.out.println("Can you please give me two final numbers");
+        System.out.println("Can you please give me one number");
         fifthNumber = keyboard.nextInt();
-        System.out.println("can you please give me second number");
+        System.out.println("Can you please give me a second number");
         sixthNumber = keyboard.nextInt();
-                System.out.println("The bigger number between "+fifthNumber+" and "+sixthNumber+" is ");
+
+        if (fifthNumber > sixthNumber){
+            System.out.println(fifthNumber+ " is the bigger of the two numbers");
+        }
+        if (fifthNumber < sixthNumber){
+            System.out.println(sixthNumber+ " is the bigger of the two numbers");
+        }
 
 
 
@@ -47,9 +55,7 @@ public class Main {
 
         helloName("" + userName);
 
-        System.out.println(firstNumber * secondNumber);
-        System.out.println(thirdNumber / fourthNumber);
-        System.out.println(fifthNumber ^ ((fifthNumber ^ sixthNumber)& - (fifthNumber << sixthNumber));
+
 
     }
 
@@ -62,18 +68,18 @@ public class Main {
         System.out.println("Hello " + userName);
     }
 
-   
-    }
+    public static int mulitiply(int firstNumber, int secondNumber){
+      return firstNumber * secondNumber;
+   }
 
     public static double divide(double thirdNumber, double fourthNumber){
         return thirdNumber / fourthNumber;
-
     }
-    public static int max(int fifthNumber, int sixthNumber){
-        return (fifthNumber ^ ((fifthNumber ^ sixthNumber)& - (fifthNumber << sixthNumber));
 
-
-
-
-
+    public static int max(int fifthNumber , int sixthNumber){
+        return fifthNumber ;
+    }
+    public static void flip (String noun2){
+        System.out.println("");
+    }
 }
